@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: rocketMq-practice
+
+rocketmq:
+  name-server: 127.0.0.1:9876
+  producer:
+    group: my-producer-group
+    send-message-timeout: 3000
+    compress-message-body-threshold: 4096
+    max-message-size: 4194304
+    retry-times-when-send-failed: 2
+    retry-times-when-send-async-failed: 2
+    retry-next-server: true
+  consumer:
+    name-server: 127.0.0.1:9876   # 消费者必需
+    group: my-consumer-group
+    consume-mode: CLUSTERING
+    consume-thread-max: 64
+    consume-thread-min: 20
+    consume-message-batch-max-size: 1
+    pull-batch-size: 32
+
+server:
+  port: 10000
+logging:
+  level:
+    org.apache.rocketmq: DEBUG
+    org.apache.rocketmq.spring: DEBUG
