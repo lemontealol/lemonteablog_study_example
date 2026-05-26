@@ -1,10 +1,10 @@
 # Daily Study Examples
 
-[![my personal blog]](https://www.lemonteablog.site)
+
 
 > **[中文版](./README.md)** | [English](./README.en.md)
 
-This repository contains code examples from the **"Daily Study"** column of .  
+This repository contains code examples from the **"每日学习分享"** column of [my personal blog](https://www.lemonteablog.site).  
 Each example is a small, self-contained piece of code that demonstrates a specific concept, trick, or best practice.
 
 ## Example to Blog Contents
